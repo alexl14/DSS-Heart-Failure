@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Heart Failure</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="dss_website\DSS.js"></script>
+</head>
+
+<body>
+    <div id="title">
+        <h1> Heart Failure </h1>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">Αρχική</a></li> 
+        <li><a href="test.html">Test</a></li>
+    </div>
+
+    <style>
+        .container {
+          height: 200px;
+          position: relative;
+        }
+        
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        </style>
+        
+        <form class="inputform" action="http://127.0.0.1:5500/test.html" method="get" accept-charset="UTF-8">
+         <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter patient's age">
+              
+        <label for="anaemia">Anaemia</label>
+        <input type="number" id="anaemia" name="anaemia" placeholder="Enter 0 for No, 1 for Yes">
+              
+        <label for="country">Creatinine Phosphokinase</label>
+        <input type="number" id="cr_phos" name="cr_phos" placeholder="Enter patient's creatine phosphokinase(23-7861)">
+
+        <label for="country">Diabetes</label>
+        <input type="number" id="diabetes" name="diabetes" placeholder="Enter 0 for No, 1 for Yes ">
+
+        <label for="country">Ejection fraction</label>
+        <input type="number" id="ej_fr" name="ej_fr" placeholder="Enter patient's ejection fraction(14-80)">
+
+        <label for="country">High blood pressure</label>
+        <input type="number" id="hi_bl" name="hi_bl" placeholder="Enter 0 for No, 1 for Yes">
+
+        <label for="country">Platelets</label>
+        <input type="number" id="platelets" name="platelets" placeholder="Enter patient's platelets(25100-621000)">
+
+        <label for="country">Serum Creatinine</label>
+        <input type="number" id="ser_cre" name="ser_cre" placeholder="Enter patient's serum creatine(0.6-9.4)">
+
+        <label for="country">Serum sodium</label>
+        <input type="number" id="ser_sod" name="ser_sod" placeholder="Enter patient's serum sodium(116-146)">
+
+        <label for="country">Sex</label>
+        <input type="number" id="sex" name="sex" placeholder="0 for female 1 for male">
+
+        <label for="country">Smoking</label>
+        <input type="number" id="smoking" name="smoking" placeholder="Enter 0 for No, 1 for Yes">
+
+        <button type="button" id="myButton">Test</button>
+
+        </form>
+
+        <script src="DSS.js"></script>
+        <h3 id="result"> </h3>
+
+        
+            
+       
+
+ 
+</body>
+
+</html>
+
+
+
+   
